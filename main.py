@@ -1,4 +1,4 @@
-'''
+
 variavel_a = 'olá mundo'
 
 print(variavel_a)
@@ -11,8 +11,7 @@ a = type(variavel_a)
 b = type(variavel_b)
 
 print(a, b)
-'''
-'''
+
 number1 = 5
 number2 = 5.
 number3 = number1+number2
@@ -42,8 +41,7 @@ strNumber = '123'
 numberfloat = float(strNumber)
 
 print(numberfloat)
-'''
-'''
+
 a = 'ola \n mundo \n'
 
 print(a)
@@ -51,7 +49,7 @@ print(a)
 print(a + a)
 
 print(a*5)
-'''
+
 lista = [1,2,3,4]
 
 print(lista)
