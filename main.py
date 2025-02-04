@@ -1,4 +1,4 @@
-
+'''
 variavel_a = 'olá mundo'
 
 print(variavel_a)
@@ -162,3 +162,60 @@ while x >= 10:
     if x > 20:
         print('muito tempo de loop')
         break
+
+
+lista_ex1 = [1,2,3,4,5,6,7,8,'a','b','c',0,-1,-2,-3,-4]
+
+for i in lista_ex1:
+    if type(i) == int:
+        if i > 0:
+            print('positivo \n')
+        elif i < 0:
+            print('negativo \n')
+        elif i == 0:
+            print('é zero \n')
+    else:
+        print('não é um número\n')
+
+
+
+lista_1 = [1,2,3,4]
+lista_2 = ['a','b','c','d']
+lista_3 = []
+
+for i in range(len(lista_1)):
+    lista_3 += [lista_1[i]]
+    lista_3 += [lista_2[i]]
+
+for i in lista_3:
+    print(i)
+
+
+
+number = 4
+result = 1
+
+while number > 0:
+    result *= number
+    number -= 1
+
+print(result)
+
+'''
+
+lista_primos = []
+number = 2
+
+while len(lista_primos) < 50:
+    i = 0
+    j = 1
+    while j <= number:
+        if number % j == 0:
+            i += 1
+        j += 1
+    if i == 2:
+            lista_primos += [number]
+    number += 1
+
+for i in lista_primos:
+    print(i)
