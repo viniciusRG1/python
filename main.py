@@ -66,3 +66,99 @@ print(lista[0])
 
 print(len(lista)) # retorna o tamanho da lista
 
+
+lista_1 = ['p','y','t','h','o','n']
+string_1 = 'python ' #string pode ter index igual a lista 
+
+print(string_1[2:]) #do segundo elemento para frente 
+print(lista_1[:2]) #até o segundo elemento
+
+print(string_1*2) #aqui é concatenação da mesma sting, soma também funciona da mesma forma
+
+a = True
+
+print(type(a))
+
+print(a)
+
+a = 5 == 5
+
+print(a)
+
+a = 5 == 6
+
+print(a)
+
+#bool é usado como condição
+
+
+
+#numeros podem ser comparados
+
+y = int(input('escolha um número \n'))
+if y > 0:
+    print('positivo')
+elif y < 0:
+    print('negativo')
+else:
+    print('é 0')
+
+#string pode ser comparadas
+x = input('escolha uma palavra \n')
+
+if x == 'string':
+    print('são a mesma palavra')
+else:
+    print('não é a mesma palavra')
+
+
+#pode comparara tipo 
+#is pergunta se é algo
+
+if x is not str:
+    print('é número')
+
+#operador and
+
+if y > 4 and y < 10:
+    print('o número foi aceito', y)
+
+#operador or
+
+if y < 4 or y > 10:
+    print('o número foi aceito', y)
+
+
+
+lista_1 = ['p','y','t','h','o','n']
+
+lista_2 = [1,2,3,4,5]
+
+#printa os elementos da lista
+
+for i in lista_1:
+    print(i)
+
+
+for i in range(len(lista_1)):
+    print(i)
+
+#devolve o valor e o index correspondente
+
+for i in enumerate(lista_1):
+    print(i)
+    print(i[0])
+    print(i[1])
+
+
+
+#while é enquanto
+
+x = 10
+
+while x >= 10:
+    print(x)
+    x += 1
+    if x > 20:
+        print('muito tempo de loop')
+        break
