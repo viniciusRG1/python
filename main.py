@@ -201,7 +201,7 @@ while number > 0:
 
 print(result)
 
-'''
+
 
 lista_primos = []
 number = 2
@@ -219,3 +219,92 @@ while len(lista_primos) < 50:
 
 for i in lista_primos:
     print(i)
+
+
+
+lista = ['a','r','a','r','a']
+
+lista_palavra = []
+
+iteracao = 0
+
+for i5 in range(len(lista)):
+    L5 = lista[i5]
+    lista_L5 = lista.copy() 
+    lista_L4 = lista_L5.copy()
+    lista_L4.pop(i5)
+    for i4 in range(len(lista_L4)):
+        L4 = lista_L4[i4]
+        lista_L3 = lista_L4.copy()
+        lista_L3.pop(i4)
+        for i3 in range(len(lista_L3)):
+            L3 = lista_L3[i3]
+            lista_L2 = lista_L3.copy()
+            lista_L2.pop(i3)
+            for i2 in range(len(lista_L2)):
+                L2 = lista_L2[i2]
+                lista_L1 = lista_L2.copy()
+                lista_L1.pop(i2)
+                for i in range(len(lista_L1)):
+                    L1 = lista_L1[i]
+                    palavra = L5 + L4 + L3 + L2 + L1
+                    
+                    if palavra not in lista_palavra:
+                        lista_palavra.append(palavra)
+
+print(lista_palavra)
+                    
+
+
+lista1 = [1,2,3,4]
+lista2 = [5,6,7,8]
+
+lista1.extend(lista2) #junta as listas
+
+print(lista1)
+
+lista3 = lista2
+
+lista3.append(lista2) #adiciona a lista no array como se fosse um elemento e não os elementos da lista
+
+print(lista3) 
+
+listaL = ['a','b','c','a']
+print(listaL.count('a')) #função que conta o número de vezes q um elemento aparece
+
+listaO = [1,3,2,6,4,5]
+print(listaO)
+listaO.sort() #ordena a lista, atenção pois ela modifica a lista e não retorna uma variavel com a lista ordenada
+print(listaO)
+
+listaL = ['t','f','z','b']
+print(listaL)
+listaL.sort()
+print(listaL)
+
+
+'''
+
+listaQ = []
+
+for i in range(5):
+    listaQ.append(i**2)
+
+print(listaQ)
+
+numeros = [1,2,3,4,5]
+letras = ['a', 'b', 'c']
+f = lambda x: x**2 if isinstance(x,(int, float)) else x * 2 #criamos uma função funciona com números e letras
+for i in numeros:
+    print(f(i))
+
+for i in letras:
+    print(f(i))
+
+listaM = list(map(f, numeros))
+
+print(listaM)
+
+Q = [x**2 for x in range(6)]
+
+print(Q)
