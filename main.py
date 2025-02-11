@@ -1,4 +1,4 @@
-'''
+
 variavel_a = 'olá mundo'
 
 print(variavel_a)
@@ -283,7 +283,7 @@ listaL.sort()
 print(listaL)
 
 
-'''
+
 
 listaQ = []
 
@@ -308,3 +308,90 @@ print(listaM)
 Q = [x**2 for x in range(6)]
 
 print(Q)
+
+
+vogais = ('a','e','i','o','u') #tupla é exatamente igual a lista só q n pode ser mudado, 1 vez definido não poder ser mudado
+
+print(vogais)
+
+numeros = [1,2,3,4,5]
+
+for i in enumerate(numeros): #cria uma tupla
+    print(i) 
+
+setVar = {'a','e','i','o','u','a'}  #conjunto, não importa ordem e só se mostra uma vez mesmo q tenha n repetições dele no conjunto
+print(setVar)
+
+disc = {'data':10, 'data2':20} #informação com chave, ou seja, algo significa outra coisa 
+print(disc['data'])
+print(disc['data2'])
+
+
+algRomano = {'I':1, 'II':2, 'III':3, 'IV':4, 'V':5}
+
+print(algRomano)
+
+algRomano.pop('V') #é capaz de modificar a tupla
+
+print(algRomano)
+
+list(algRomano.items())
+print(list(algRomano.items())[3][0])
+
+algRomano.keys()
+list(algRomano.keys())
+print(list(algRomano.keys()))
+
+list(algRomano.values())
+print(list(algRomano.values()))
+
+print(algRomano.get('I'))
+
+
+listaEX = ['P','A','Y','A','T','A','H','O','N']
+
+i = 0
+print(listaEX.count('A'))
+while i < len(listaEX):
+    if(listaEX[i] == 'A'):
+        listaEX.pop(i)
+    i += 1
+    
+
+
+print(listaEX)
+
+
+
+listaImpares = [(i*2+1) for i in range(26)]
+
+print(listaImpares)
+
+
+valores = [1,2,3,4,5]
+keys = ['a','b','c','d','e']
+
+listaContida = {}
+
+for i in range(5):
+    listaContida[keys[i]] = valores[i]
+
+print(listaContida)
+
+listavalor = list(listaContida.values())
+
+listaKeys = list(listaContida.keys())
+
+print(listavalor)
+print(listaKeys)
+
+import matplotlib.pyplot as plt
+
+x = [x for x in range((101))]
+y = [y**2 for y in x]
+
+plt.plot(x,y)
+
+
+
+
