@@ -394,4 +394,56 @@ plt.plot(x,y)
 
 
 
+from math import sqrt
+
+a, b, r = 100,100,100
+
+x = []
+y = []
+
+x = [i for i in range (2*r +1)]
+
+y = lambda x:sqrt((r**2)-(x-a)**2)+b
+
+y.extend(list(map(y_x,x)))
+y.extend(list(map(y_x_menos,x)))
+
+x.extend(x)
+
+import matplotlib.pyplot as plt
+
+#função
+
+def minhaFuncao(nome):
+    print('meu nome é '+nome)
+
+minhaFuncao('cazé')
+
+def somaDeQuadrados(a, b):
+    a = a**2
+    b = b**2
+    return a+b
+
+def somaDeQuadradosV2(a, b):
+    a = a**2
+    b = b**2
+    resultado = a+b
+    return resultado
+
+print(somaDeQuadrados(2,2))
+print(somaDeQuadradosV2(2,2))
+
+
+
+import math as mt # isso é uma biblioteca com apelido 
+a = mt.cos(0)
+print(a)
+print(type(a))
+a = mt.sin(0)
+print(a)
+
+
+from modulo import *
+
+print(pesoTerra(10))
 
